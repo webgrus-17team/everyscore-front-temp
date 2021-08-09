@@ -1,5 +1,5 @@
 <!doctype html>
-<%@ page contentType="text/html;charset=utf-8" %>
+<%@ page contentType="text/html;charset=utf-8" %> <!--한글 깨짐으로 인한 utf-8 추가-->
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -87,81 +87,108 @@
             </ul>
         </nav>
    <h1><strong>회원 가입</strong></h1>
-    <div class="write">
-      <form name="Join_Total_Information" action="http://ManagePage.co.kr" method="post">
-        <table border="0">
-          <tr>
-            <td>성별 </td>
-            <td>
-              <input class="gender" type="radio" name="gender" value="male">남자
-              <input class="gender" type="radio" name="gender" value="female">여자
-            </td>
-          </tr>
-          <tr>
-            <td>생년월일</td>
-            <td>
-              <input type="text" class="birthday_box" name="birthday_year" maxlength="4" placeholder=" 년(4자)">
-              <select class="birthday_select_box" name="birthday_month" >
-                <option> 월</option>
-                <option value="01">1</option>
-                <option value="02">2</option>
-                <option value="03">3</option>
-                <option value="04">4</option>
-                <option value="05">5</option>
-                <option value="06">6</option>
-                <option value="07">7</option>
-                <option value="08">8</option>
-                <option value="09">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-              </select>
-              <input type="text" class="birthday_box" name="birthday_day" maxlength="2" placeholder=" 일">
-            </td>
-          <tr>
-            <td>학번</td> <td><input type="text" name="major" placeholder="  ex) 12202538"></td>
-          </tr>
-          <tr>
-            <td>학과</td> <td><input type="text" name="classnumber" placeholder="  ex) 컴퓨터공학"></td>
-          </tr>
-          <tr>
-            <td>이름</td> <td><input type="text" name="username" placeholder="  ex) 홍길동"></td>
-          </tr>
-          <tr>
-            <td>아이디</td> <td><input type="text" name="id" placeholder="  ex) stu123"></td>
-          </tr>
-          <tr>
-            <td>비밀번호</td> <td><input type="password" name="pw" placeholder="  ********"></td>
-          </tr>
-          <tr>
-            <td>이메일</td> <td><input type="email" name="email" placeholder="  ex) stu123@naver.com"></td>
-          </tr>
-        </table>
-        <br>
-        <input id="submit_box" type="submit" value="완료">
-        <br>
-        <br>
-        <br>
-      </form>
-    </div>
+   <div class="write">
+       <form name="Join_Total_Information"> <!-- form 설정 삭제 -->
+           <table border="0">
+               <tr>
+                   <td>성별 </td>
+                   <td>
+                       <input class="gender" type="radio" name="gender" value="male">남자
+                       <input class="gender" type="radio" name="gender" value="female">여자
+                   </td>
+               </tr>
+               <tr>
+                   <td>생년월일</td>
+                   <td>
+                       <input type="text" class="birthday_box" name="birthday_year" maxlength="4" placeholder=" 년(4자)">
+                       <select class="birthday_select_box" name="birthday_month" >
+                           <option> 월</option>
+                           <option value="01">1</option>
+                           <option value="02">2</option>
+                           <option value="03">3</option>
+                           <option value="04">4</option>
+                           <option value="05">5</option>
+                           <option value="06">6</option>
+                           <option value="07">7</option>
+                           <option value="08">8</option>
+                           <option value="09">9</option>
+                           <option value="10">10</option>
+                           <option value="11">11</option>
+                           <option value="12">12</option>
+                       </select>
+                       <input type="text" class="birthday_box" name="birthday_day" maxlength="2" placeholder=" 일">
+                   </td>
+               <tr>
+                   <td>학번</td> <td><input type="text" name="major" placeholder="  ex) 12202538"></td>
+               </tr>
+               <tr>
+                   <td>학과</td> <td><input type="text" name="classnumber" placeholder="  ex) 컴퓨터공학"></td>
+               </tr>
+               <tr>
+                   <td>이름</td> <td><input type="text" name="username" placeholder="  ex) 홍길동"></td>
+               </tr>
+               <tr>
+                   <td>아이디</td> <td><input type="text" name="id" placeholder="  ex) stu123"></td>
+               </tr>
+               <tr>
+                   <td>비밀번호</td> <td><input type="password" name="pw" placeholder="  ********"></td>
+               </tr>
+               <tr>
+                   <td>이메일</td> <td><input type="email" name="email" placeholder="  ex) stu123@naver.com"></td>
+               </tr>
+           </table>
+           <br>
+       </form>
+       <input id="submit_box" type="button" value="완료"> <!--생활코딩 참고, 완료 버튼 form 밖으로 내림-->
+       <br>
+       <br>
+       <br>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-      $(#submit_box).click(funtion(){
-        $.ajax({
-          url:'http:/localhost:8080/api/v1/join',
-          type:'post',
-          data: $('form').serialize(),
-          success: funtion(data){
-            if (data==='JoinFail'){
-              alert('미입력된 회원가입 정보가 존재합니다.')
-            }
-            else {
-              window.location.href='Login_Page.jsp'
-            }
-          }
-        })
-      })
-    </script>
+   </div>
+
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script>
+       /*$('#submit_box').click(funtion(){
+           $.ajax({
+               url:'http:/localhost:8080/api/v1/join',
+               type:'post',
+               data: $('form').serialize(),
+               success: funtion(data){
+               if (data==='JoinFail'){
+                   alert('미입력된 회원가입 정보가 존재합니다.')
+               }
+               else {
+                   window.location.href='Login_Page.jsp'
+               }
+           }
+       })
+       })*/
+       //잔버그가 많아서 우선은 비슷하게 다시 작성하겠습니다
+       let main ={
+           // 버튼과 함수를 매칭해주는 공간
+           init : function (){
+               let _this=this;
+
+               // submit_box id 지닌 버튼 클릭 시
+               $('#submit_box').on('click', function (){
+                   _this.join(); // 아래 join function 실행
+               });
+           },
+           join : function () {
+               $.ajax( {
+                   url:'http://localhost:8080/api/v1/join',
+                   type:'post',
+                   data: $('form').serialize(),
+               }).done(function () {
+                   alert('회원 정보 전달 성공');
+                   window.location.href = 'Login_Page.jsp';
+               }).fail(function (error) {
+                   alert('오류');
+               });
+           }
+       };
+
+       main.init();
+   </script>
   </body>
 </html>
