@@ -174,16 +174,12 @@
                    _this.join(); // 아래 join function 실행
                });
            },
+           // 프런트에서는 정보 보내는 것만, 오류처리는 백엔드에서 하는게 좋을 듯
            join : function () {
                $.ajax( {
                    url:'http://localhost:8080/api/v1/join',
                    type:'post',
                    data: $('form').serialize(),
-               }).done(function () {
-                   alert('회원 정보 전달 성공');
-                   window.location.href = 'Login_Page.jsp';
-               }).fail(function (error) {
-                   alert('오류');
                });
            }
        };
