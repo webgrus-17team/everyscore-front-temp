@@ -88,7 +88,7 @@
         </nav>
    <h1><strong>회원 가입</strong></h1>
    <div class="write">
-       <form name="Join_Total_Information"> <!-- form 설정 삭제 -->
+       <form name="Join_Total_Information" action="http://localhost:8080/api/v1/join" method="post">
            <table border="0">
                <tr>
                    <td>성별 </td>
@@ -138,14 +138,16 @@
                </tr>
            </table>
            <br>
+           <input id="submit_box" type="submit" value="완료"> <!--생활코딩 참고, 완료 버튼 form 밖으로 내림-->
+           <br>
+           <br>
+           <br>
        </form>
-       <input id="submit_box" type="button" value="완료"> <!--생활코딩 참고, 완료 버튼 form 밖으로 내림-->
-       <br>
-       <br>
-       <br>
-
    </div>
 
+   <!--생각해보니 어짜피 회원가입, 로그인 페이지는 json이 아닌 html form으로 전달하기로 함-->
+   <!--그러면 join, login 페이지에서는 ajax를 사용하지 않고, 그냥 submit으로 처리할 수 있지 않을까?-->
+   <!--
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    <script>
        /*$('#submit_box').click(funtion(){
@@ -180,11 +182,21 @@
                    url:'http://localhost:8080/api/v1/join',
                    type:'post',
                    data: $('form').serialize(),
+                   async: false,
+                   success: function (data) {
+                       if (data=='JoinFail'){
+                           alert('미입력된 회원가입 정보가 존재합니다.');
+                       }
+                       else {
+                           window.location.href='Login_Page.jsp';
+                       }
+                   }
                });
            }
        };
 
        main.init();
    </script>
+   -->
   </body>
 </html>
