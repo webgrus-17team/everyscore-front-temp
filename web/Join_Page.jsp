@@ -125,7 +125,7 @@
                    <td>학과</td> <td><input type="text" name="classnumber" placeholder="  ex) 컴퓨터공학"></td>
                </tr>
                <tr>
-                   <td>이름</td> <td><input type="text" name="username" placeholder="  ex) 홍길동"></td>
+                   <td>이름</td> <td><input type="text" name="name" placeholder="  ex) 홍길동"></td>
                </tr>
                <tr>
                    <td>아이디</td> <td><input type="text" name="id" placeholder="  ex) stu123"></td>
