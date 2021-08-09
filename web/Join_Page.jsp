@@ -149,7 +149,7 @@
     <script>
       $(#submit_box).click(funtion(){
         $.ajax({
-          url:'/api/v1/join',
+          url:'http:/localhost:8080/api/v1/join',
           type:'post',
           data: $('form').serialize(),
           success: funtion(data){
