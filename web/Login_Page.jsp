@@ -15,7 +15,7 @@
           <strong>Every Score</strong>
         </p>
       </header>
-      <form action="http://EveryScore.co.kr" method ="post">
+      <form action="http://localhost:8080/api/v1/user" method ="post">
          <div id="container">
            <div id="join">
                <div class="form-group">
@@ -31,7 +31,7 @@
       </form>
 
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script>
+      <!--<script>
         $('#Loginbox').click(funtion(){
           $.ajax({
             url:'/api/v1/user',
@@ -47,7 +47,7 @@
             }
           })
         })
-      </script>
+      </script>-->
     </div>
   </body>
 </html>
