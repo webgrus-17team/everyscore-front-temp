@@ -61,13 +61,13 @@
           <strong><a href="Login_Page.html">Every Score</a></strong>
         </p>
       </header>
-      <form name="Login_Form" action="/api/v1/user" method ="post">
+      <form name="Login_Form" action="http://localhost:8080/api/v1/user" method ="post">
          <div class="id-pw-group">
             <input type="text" name="id" maxlength="20" placeholder="ID" required>
             <input type="password" name="pw" maxlength="20" placeholder="Password" required>
          </div>
          <p><input type="submit" id="Loginbox" value="로그인" length="20"></p>
-         <p class="Join_box">Every Score는 처음이야? <a href="Join_Page.html"> 회원가입</a></p>
+         <p class="Join_box">Every Score는 처음이야? <a href="Join_Page.jsp"> 회원가입</a></p>
        </form>
     </div>
   </body>
