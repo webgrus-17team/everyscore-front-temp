@@ -102,7 +102,7 @@
         <ul class="everyscore_menu">
           <li class="everyscore_item"><a href="main_3.jsp"><img src="img/outline_home_black_24dp.png" title="홈" height=30, width=30></a></li>
           <li class="everyscore_item"><a href=""><img src="img/outline_face_black_24dp.png" title="마이페이지" height=30, width=30></a></li>
-          <li class="everyscore_item"><a href="Login_Page.jsp"><img src="img/outline_logout_black_24dp.png" title="로그아웃" height=30, width=30></a></li>
+          <li class="everyscore_item"><a href="http://localhost:8080/doLogout"><img src="img/outline_logout_black_24dp.png" title="로그아웃" height=30, width=30></a></li>
         </ul>
       </nav>
 
