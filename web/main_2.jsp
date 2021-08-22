@@ -97,12 +97,12 @@
   <body>
       <nav class="everyscore">
         <div class="everyscore_logo">
-            <a href="main_3.html"><img src="img/outline_done_outline_black_24dp.png" height=40, width=40>Every Score</a>
+            <a href="main_3.jsp"><img src="img/outline_done_outline_black_24dp.png" height=40, width=40>Every Score</a>
         </div>
         <ul class="everyscore_menu">
-          <li class="everyscore_item"><a href="main_3.html"><img src="img/outline_home_black_24dp.png" title="홈" height=30, width=30></a></li>
+          <li class="everyscore_item"><a href="main_3.jsp"><img src="img/outline_home_black_24dp.png" title="홈" height=30, width=30></a></li>
           <li class="everyscore_item"><a href=""><img src="img/outline_face_black_24dp.png" title="마이페이지" height=30, width=30></a></li>
-          <li class="everyscore_item"><a href="Login_Page.html"><img src="img/outline_logout_black_24dp.png" title="로그아웃" height=30, width=30></a></li>
+          <li class="everyscore_item"><a href="Login_Page.jsp"><img src="img/outline_logout_black_24dp.png" title="로그아웃" height=30, width=30></a></li>
         </ul>
       </nav>
 
@@ -149,7 +149,7 @@
       data: $('form').serialize(),
       dataType: 'json',
       success: function(data){
-        window.location.href='Result_Page.html';
+        window.location.href='Result_Page.jsp';
       }
     })
   })

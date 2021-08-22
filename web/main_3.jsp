@@ -140,12 +140,12 @@
     <body>
           <nav class="everyscore">
               <div class="everyscore_logo">
-                  <a href="main_3.html"><img src="img/outline_done_outline_black_24dp.png" height=40, width=40>Every Score</a>
+                  <a href="main_3.jsp"><img src="img/outline_done_outline_black_24dp.png" height=40, width=40>Every Score</a>
               </div>
               <ul class="everyscore_menu">
-                  <li class="everyscore_item"><a href="main_3.html"><img src="img/outline_home_black_24dp.png" title="홈" height=30, width=30></a></li>
+                  <li class="everyscore_item"><a href="main_3.jsp"><img src="img/outline_home_black_24dp.png" title="홈" height=30, width=30></a></li>
                   <li class="everyscore_item"><a href=""><img src="img/outline_face_black_24dp.png" title="내정보" height=30, width=30></a></li>
-                  <li class="everyscore_item"><a href="Login_Page.html"><img src="img/outline_logout_black_24dp.png" title="로그아웃" height=30, width=30></a></li>
+                  <li class="everyscore_item"><a href="Login_Page.jsp"><img src="img/outline_logout_black_24dp.png" title="로그아웃" height=30, width=30></a></li>
               </ul>
           </nav>
           <h1><strong>게 시 판</strong></h1><br><br>
@@ -184,9 +184,9 @@
                         <ul class="big_menu">
                           <li class="subjectname">객체지향프로그래밍 1</li>
                           <ul class="small_menu">
-                            <li><a href="main_2.html">중간고사</a></li>
-                            <li><a href="main_2.html">퀴즈</a></li>
-                            <li><a href="main_2.html">기말고사</a></li>
+                            <li><a href="main_2.jsp">중간고사</a></li>
+                            <li><a href="main_2.jsp">퀴즈</a></li>
+                            <li><a href="main_2.jsp">기말고사</a></li>
                           </ul>
                         </ul>
                       </td>
@@ -222,9 +222,9 @@
                                         '<ul class="big_menu">'
                                           '<li class="subjectname">' + jsonData[i].Subject_name + '</li>'
                                           '<ul class="small_menu">'
-                                            '<li><a href="main_2.html">중간고사</a></li>'
-                                            '<li><a href="main_2.html">퀴즈</a></li>'
-                                            '<li><a href="main_2.html">기말고사</a></li>'
+                                            '<li><a href="main_2.jsp">중간고사</a></li>'
+                                            '<li><a href="main_2.jsp">퀴즈</a></li>'
+                                            '<li><a href="main_2.jsp">기말고사</a></li>'
                                           '</ul>'
                                         '</ul>'
                                     '</td>';
@@ -291,7 +291,7 @@
       dataType: 'JSON',
       data: $('form').serialize(),
       success: function(data){
-        window.location.href='main_3.html'
+        window.location.href='main_3.jsp'
       }
     })
   })

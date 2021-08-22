@@ -57,8 +57,8 @@
     <div>
       <header>
         <p class="Login_Total_Info">
-         <a href="Login_Page.html"><img src="img/outline_done_outline_black_24dp.png"  title="Logo" height="50" width="55"></a>
-          <strong><a href="Login_Page.html">Every Score</a></strong>
+         <a href="Login_Page.jsp"><img src="img/outline_done_outline_black_24dp.png"  title="Logo" height="50" width="55"></a>
+          <strong><a href="Login_Page.jsp">Every Score</a></strong>
         </p>
       </header>
       <form name="Login_Form" action="http://localhost:8080/api/v1/user" method ="post">
