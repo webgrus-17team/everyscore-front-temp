@@ -25,7 +25,6 @@
             margin: 0px;
             padding: 50px;
             text-align: center;
-            color: white;
             /* 그라데이션 코드 시작 */
             background: #01579b;
             background: -webkit-linear-gradient(left, #01579b 0%, #80adc9 100%);
