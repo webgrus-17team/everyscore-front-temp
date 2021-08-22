@@ -24,5 +24,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="tomcat:servlet:4.1.36" level="project" />
     <orderEntry type="library" name="jquery-3.6.0" level="application" />
+    <orderEntry type="library" name="chart.js" level="application" />
   </component>
 </module>
