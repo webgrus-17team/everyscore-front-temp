@@ -25,9 +25,9 @@
                            '<ul class="big_menu">' +
                              '<li class="subjectname">' + jsonData[i].subject + '</li>' +
                              '<ul class="small_menu">' +
-                                 '<li><a href="Main2_page.html">중간고사</a></li>' +
-                                 '<li><a href="Main2_page.html">퀴즈</a></li>' +
-                                 '<li><a href="Main2_page.html">기말고사</a></li>' +
+                                 '<li><a href="Main2_page.jsp">중간고사</a></li>' +
+                                 '<li><a href="Main2_page.jsp">퀴즈</a></li>' +
+                                 '<li><a href="Main2_page.jsp">기말고사</a></li>' +
                              '</ul>' +
                            '</ul>' +
                         '</td>' +
@@ -54,9 +54,9 @@
                                          '<ul class="big_menu">' +
                                            '<li class="subjectname">' + jsonData[i].subject + '</li>' +
                                            '<ul class="small_menu">' +
-                                               '<li><a href="Main2_page.html">중간고사</a></li>' +
-                                               '<li><a href="Main2_page.html">퀴즈</a></li>' +
-                                               '<li><a href="Main2_page.html">기말고사</a></li>' +
+                                               '<li><a href="Main2_page.jsp">중간고사</a></li>' +
+                                               '<li><a href="Main2_page.jsp">퀴즈</a></li>' +
+                                               '<li><a href="Main2_page.jsp">기말고사</a></li>' +
                                            '</ul>' +
                                          '</ul>' +
                                       '</td>' +
@@ -121,7 +121,7 @@
       dataType: 'JSON',
       data: $('form').serialize(),
       success: function(data){
-        window.location.href='main_3.html'
+        window.location.href='main_3.jsp'
       }
     })
   })
