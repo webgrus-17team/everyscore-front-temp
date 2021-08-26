@@ -28,6 +28,9 @@
           <form name="scorepage">
             <table border="0">
               <tr>
+                <td>ID</td> <td><input class="main2_id" type="text" name="id"></td>
+              </tr>
+              <tr>
                 <td class="left_td">내 점수</td> <td><input type="text" name="myscore" maxlength="3" autofocus required> / 100</td>
               </tr>
               <tr>
