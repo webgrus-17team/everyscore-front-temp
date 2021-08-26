@@ -147,5 +147,5 @@ xhttp.onreadystatechange = function(){
 
   }
 }
-xhttp.open("GET", "/api/v1/result/{subjectName}/{professorName}/{testType}", true);
+xhttp.open("GET", "http://localhost:8080/api/v1/result/{subjectName}/{professorName}/{testType}", true);
 xhttp.send();

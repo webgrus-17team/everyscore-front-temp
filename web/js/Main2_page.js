@@ -1,6 +1,6 @@
 $("#submit_box").click( function() {
   $.ajax({
-    url: '/api/v1/input',
+    url: 'http://localhost:8080/api/v1/input',
     type: 'post',
     data: $('form').serialize(),
     dataType: 'json',

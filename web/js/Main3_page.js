@@ -10,7 +10,7 @@
           // alert("게시판 로딩 에러");
         }
     }
-    xhttp.open("GET", "/api/v1/board", true);
+    xhttp.open("GET", "http://localhost:8080/api/v1/board", true);
     xhttp.send();
 
     function jsonfunc(jsonText){
@@ -70,7 +70,7 @@
               }
           };
 
-          xhttp.open('GET', '/api/v1/board', true); // 요청 초기화
+          xhttp.open('GET', 'http://localhost:8080/api/v1/board', true); // 요청 초기화
           xhttp.send(); // 요청을 실행. 기본값은 비동기 요청 직후 즉시 반환.
       };
     });
@@ -116,7 +116,7 @@
 // JSON으로 백엔드에 데이터 전송하는 코드
   $('#hidden-submit-box').click(function(){
     $.ajax({
-      url: '/api/v1/start',
+      url: 'http://localhost:8080/api/v1/start',
       type: 'post',
       dataType: 'JSON',
       data: $('form').serialize(),

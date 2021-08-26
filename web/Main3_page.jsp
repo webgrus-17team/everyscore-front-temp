@@ -28,8 +28,8 @@
                 <div>
                   <form id="hidden-form">
                     >>
-                    <input type="text" name="Subject_name" placeholder="  과목명" required>
-                    <input type="text" name="Professor_name" placeholder="  교수명" required>
+                    <input type="text" name="subjectName" placeholder="  과목명" required>
+                    <input type="text" name="professorName" placeholder="  교수명" required>
                     <input type="submit" id="hidden-form-btn" value="완료">
                   </form>
                 </div>
