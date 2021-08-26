@@ -1,84 +1,22 @@
 <!doctype html>
 <%@ page contentType="text/html;charset=utf-8" %> <!--한글 깨짐으로 인한 utf-8 추가-->
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&family=Noto+Sans+KR:wght@100&family=Poor+Story&family=Sunflower:wght@500&display=swap" rel="stylesheet">
-        <title>ES 회원가입</title>
-    <style>
-      #container{
-        width: 400px;
-        margin: auto;
-      }
-      #join{
-        padding: 30px;
-        padding-top: 5px;
-        border: 2px solid #01579B;
-        background-color: white;
-        color: gray;
-      }
-      #submit_box{
-        width: 230px;
-        height: 57px;
-        font-size: 16px;
-        background-color: #01579B;
-        color: white;
-        border-radius: 4px;
-        position: absolute;
-        left: 40px;
-      }
-      .gender{
-        text-align: center;
-        position: relative;
-        top: 12px;
-      }
-      .box{
-        width: 230px;
-      }
-      strong a{
-        text-decoration: none;
-        color: #01579B;
-        font-size: 40px;
-        font-family: 'Ubuntu', sans-serif;
-      }
-      input {
-        margin-left: 45px;
-        height : 38px;
-        border: 1px solid lightgray;
-        border-radius: 5px;
-        color: gray;
-      }
-      *{
-        font-family: 'Nanum Gothic', sans-serif;
-        font-weight: 900;
-      }
-      body{
-        background-color: #F2F2F2;
-        width : 400px;
-        height: 500px;
-        text-align:center;
-        position: absolute;
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%, -50%)
-      }
-      tr {
-        height : 40px;
-      }
-
-    </style>
+  <head>
+     <meta charset="utf-8">
+     <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&family=Poor+Story&family=Rampart+One&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="css/Join_page.css">
+     <title>ES 회원가입</title>
   </head>
   <body>
     <header>
         <p class="Login_Total_Info">
-         <a href="http://localhost:8080/Join_Page.jsp"><img src="img/outline_done_outline_black_24dp.png"  title="Logo" height="50" width="55"></a>
-          <strong><a href="http://localhost:8080/Join_Page.jsp">Every Score</a></strong>
+         <a href="http://everyScore.co.kr"><img src="img/outline_done_outline_black_24dp.png"  title="Logo" height="50" width="55"></a>
+          <strong><a href="Login_Page.html">Every Score</a></strong>
         </p>
     </header>
     <div id="container">
       <div id="join">
-       <form name="Join_Form" action="http://localhost:8080/api/v1/join" method="post">
+       <form name="Join_Form" action="http://ManagePage.co.kr" method="post">
         <table border="0">
           <tr>
             <td>
@@ -115,3 +53,4 @@
     <br>
   </body>
 </html>
+
