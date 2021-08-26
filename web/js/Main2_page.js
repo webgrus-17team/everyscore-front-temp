@@ -5,7 +5,7 @@ $("#submit_box").click( function() {
     data: $('form').serialize(),
     dataType: 'json',
     success: function(data){
-      window.location.href='Result_Page.html';
+      window.location.href='Result_Page.jsp';
     }
   })
 })
