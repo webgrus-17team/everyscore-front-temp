@@ -109,16 +109,16 @@ xhttp.onreadystatechange = function(){
         LV1 = LV2 = LV3 = LV4 = LV5 = 0;
 
         for(let i=0; i<jsonData.length; i++){
-          if(jsonData[i].level == very_easy){
+          if(jsonData[i].level == 1){
             LV1++;
           }
-          else if(jsonData[i].level == easy){
+          else if(jsonData[i].level == 2){
             LV2++;
           }
-          else if(jsonData[i].level == medium){
+          else if(jsonData[i].level == 3){
             LV3++;
           }
-          else if(jsonData[i].level == difficult){
+          else if(jsonData[i].level == 4){
             LV4++;
           }
           else{
