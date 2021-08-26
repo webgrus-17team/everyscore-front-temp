@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&family=Poor+Story&family=Rampart+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/Login_Page.css">
+    <link rel="stylesheet" href="css/Login_page.css">
     <title>Every Score</title>
   </head>
   <body>
