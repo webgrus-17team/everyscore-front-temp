@@ -1,0 +1,72 @@
+#Main_Info{
+  display: grid;
+  grid-template-columns: 1fr 500px 300px 1fr;
+}
+/* 페이지에서 오른쪽 right info, 왼쪽은 left info로 함 */
+#right_info{
+  margin: 50px;
+  margin-bottom: 0px;
+}
+/* 평균, 중간값 그래프 그룹을 stack */
+.stack_graph{
+   margin:0px;
+   width: 190px;
+}
+.average_stack1, .midvalue_stack2{
+  margin: 0 0 20px;
+  height: 40px;
+  background-color: #ccc;
+  border-radius:40px;
+  font-size:13px;
+}
+.stack_graph span{
+  display:block;
+  padding: 0 10px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 40px;
+  box-sizing: border-box;
+  color: white;
+}
+/* 색상 css */
+.average_stack1 span{background: palevioletred; animation:stack1 2s 1;}
+.midvalue_stack2 span{background: mediumpurple; animation:stack2 2s 1;}
+@keyframes stack1{
+    0% {width:0; color: rgba(255,255,255,0);}
+    40% {color: rgba(255,255,255,1);}
+    100% {width: 47.2%;}
+}
+@keyframes stack2{
+    0% {width:0; color: rgba(255,255,255,0);}
+    40% {color: rgba(255,255,255,1);}
+    100% {width: 41%;}
+}
+/* 여기부터 난이도 그래프 */
+.ranking{
+    position: absolute;
+    z-index:2;
+    text-align: center;
+    margin-top: 25px;
+}
+.myrank{
+    font-size: 27px;
+}
+strong{
+  font-family: 'Poor Story', cursive;
+  font-size: 27px;
+}
+h1 {
+  color: whitesmoke;
+  margin: 0px;
+  padding: 50px;
+  text-align: center;
+  color: white;
+  /* 그라데이션 코드 시작 */
+  background: #01579b;
+  background: -webkit-linear-gradient(left, #01579b 0%, #80adc9 100%);
+  background: -o-linear-gradient(left, #01579b 0%, #80adc9 100%);
+  background: linear-gradient(to right, #01579b 0%, #80adc9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01579b', endColorstr='#80adc9',GradientType=1 );
+  /* 그라데이션 코드 끝 */
+}

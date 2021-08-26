@@ -1,0 +1,47 @@
+*{
+  font-family: 'Poor Story', cursive;
+  font-weight:900;
+}
+#Loginbox{
+  width: 316px;
+  height: 55px;
+  font-size: 18px;
+  background-color:#01579B;
+  color: white;
+  border: 10px solid #01579B;
+  border-radius: 10px;
+}
+.Join_box{
+  font-size: 15px;
+  text-align: center;
+}
+.Join_box a{
+  font-size: 17px;
+}
+.id-pw-group input[type=text],
+.id-pw-group input[type=password]{
+  width: calc(80%);
+  padding: 15px;
+  font-size: 18px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+body{
+  background-color: whitesmoke;
+  width : 350px;
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+a{
+  text-decoration: none;
+  color: blue;
+}
+strong a{
+  color: #01579B;
+  font-size: 40px;
+  font-family: 'Rampart One', cursive;
+  font-weight:900;
+}

@@ -1,0 +1,79 @@
+      #submit_box {
+        width : 200px;
+        height: 40px;
+        font-size: 17px;
+        background-color:#01579B;
+        color: white;
+        margin-right : 5px;
+        border: 0px solid #01579B;
+        border-radius: 7px;
+        position: absolute;
+      }
+      #submit_box:hover{
+        background-color: whitesmoke;
+      }
+      #child1 {
+        margin-right: -5px;
+        font-weight:700;
+        width : 600px;
+        height: 20px;
+        font-size: 15px;
+        border: 2px solid whitesmoke;
+        /* 그라데이션 */
+        background: #0fbf0f;
+        background: -moz-linear-gradient(left,  #0fbf0f 1%, #fff714 51%, #e50000 100%);
+        background: -webkit-linear-gradient(left,  #0fbf0f 1%,#fff714 51%,#e50000 100%);
+        background: linear-gradient(to right,  #0fbf0f 1%,#fff714 51%,#e50000 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0fbf0f', endColorstr='#e50000',GradientType=1 );
+      }
+      #Group_level {
+        font-size: 15px;
+      }
+      #Group_level input{
+        margin-left: 55px;
+      }
+      #Group_level .level_button{
+        margin-left: 40px;
+        position:relative;
+        top: 5px;
+      }
+      .write{
+        display: grid;
+        grid-template-columns: 1fr 720px 1fr;
+      }
+      .left_td {
+        width: 100px;
+      }
+      p{
+        margin: 6px;
+      }
+      input {
+        height : 20px;
+        width:30px;
+        border: 1px solid black;
+        border-radius: 3px;
+      }
+      td {
+        width : 200px;
+        font-size: 20px;
+      }
+      tr {
+        height : 120px;
+      }
+      strong{
+        font-size: 27px;
+      }
+      h1 {
+        color: whitesmoke;
+        margin: 0px;
+        padding: 50px;
+        text-align: center;
+        color: white;
+        /* 그라데이션 코드 시작 */
+        background: #01579b;
+        background: -webkit-linear-gradient(left, #01579b 0%, #80adc9 100%);
+        background: -o-linear-gradient(left, #01579b 0%, #80adc9 100%);
+        background: linear-gradient(to right, #01579b 0%, #80adc9 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01579b', endColorstr='#80adc9',GradientType=1 );
+        /* 그라데이션 코드 끝 */
+      }

@@ -1,0 +1,37 @@
+*{
+  font-family: 'Poor Story', cursive;
+  font-weight: 600;
+}
+body{
+   margin: 0;
+   background-color: whitesmoke;
+}
+.everyscore{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 4px 40px;
+}
+.everyscore_menu{
+   display: flex;
+   list-style-type: none;
+   padding-left: 0;
+}
+.everyscore_item{
+   padding: 1px 15px;
+   cursor: pointer;
+}
+a:hover{
+   background-color: white;
+}
+.everyscore_item a{
+   text-decoration: none;
+   font-size: 17px;
+}
+.everyscore_logo a{
+   font-family: 'Rampart One', cursive;
+   font-weight: 900;
+   text-decoration: none;
+   font-size: 30px;
+   color: #01579B;
+}

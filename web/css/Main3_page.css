@@ -1,0 +1,127 @@
+#Main_Info {
+  margin : 0px;
+  display: grid;
+  grid-template-columns: 1fr 800px 1fr ;
+  text-align: center;
+}
+#writing-form {
+  display: grid;
+  grid-template-columns: 90px 1fr 35px 180px;
+  height: 60px;
+  text-align: left;
+}
+#writing-form .writing-button {
+  border: 1px solid whitesmoke;
+  color: white;
+  background-color: #01579B;
+  padding-right: 15px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  padding-left: 15px;
+  text-decoration: none;
+  border-radius: 7px;
+  font-size: 15px;
+  height: 45px;
+  cursor: pointer;
+}
+#hidden-form {
+  padding: 8px;
+}
+#hidden-form input[type=text] {
+  margin-left: 10px;
+  width: 110px;
+  height : 25px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  font-size: 15px;
+}
+#hidden-form-btn{
+  background-color: black;
+  margin-left: 10px;
+  height : 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: white;
+  width: 60px;
+}
+#writing-form img {
+  padding-top: 8px;
+}
+#search-form {
+  padding-top: 8px;
+}
+#search-box{
+  height: 25px;
+  font-weight: 700;
+  border-radius: 7px;
+  font-size: 15px;
+  width: 160px;
+  border: 1px solid black;
+  text-align: left;
+}
+#postHead {
+  display: grid;
+  grid-template-columns: 105px 370px 175px 150px;
+  text-align: center;
+  border-top: 2px solid #01579B;
+  border-bottom: 2px solid #01579B;
+  margin : 0px;
+  border-collapse: collapse;  /* table의 테두리가 기본2줄인데 1줄로 바꿈 */
+  text-align: center;
+  font-size: 17px;
+}
+#postHead span{
+  padding: 10px;
+}
+.big_menu {
+  cursor: pointer;
+  font-size: 20px;
+}
+.small_menu a {
+  font-size: 15px;
+  color: red;
+  text-decoration: none;
+}
+.subjectname{
+  list-style:none;
+  padding-left:0px;
+  color: #01579B;
+}
+table{
+  width : 100%;  /*해당 칸에서 꽉채워서 표가 차지하게 함*/
+  margin : 0px;
+  padding : 0px;
+  border-collapse: collapse;  /* table의 테두리가 기본2줄인데 1줄로 바꿈 */
+  text-align: center;
+}
+tr {
+  border-bottom: 1px solid #999; /* 각줄 밑에 회색 선 만듦 */
+  display: grid;
+  grid-template-columns: 105px 370px 175px 150px;
+}
+.postNum, .professorname, .postDate{
+  display: grid;
+  place-content: center;
+}
+tr td:nth-child(2) { /* 예외적으로 tbody의 각줄의 2번째 td만 가운데 정렬 */
+  text-align: left;
+}
+strong{
+              font-family: 'Poor Story', cursive;
+  font-size: 27px;
+}
+h1 {
+  color: whitesmoke;
+  margin: 0px;
+  padding: 50px;
+  text-align: center;
+  color: white;
+  /* 그라데이션 코드 시작 */
+  background: #01579b;
+  background: -webkit-linear-gradient(left, #01579b 0%, #80adc9 100%);
+  background: -o-linear-gradient(left, #01579b 0%, #80adc9 100%);
+  background: linear-gradient(to right, #01579b 0%, #80adc9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01579b', endColorstr='#80adc9',GradientType=1 );
+  /* 그라데이션 코드 끝 */
+  }
