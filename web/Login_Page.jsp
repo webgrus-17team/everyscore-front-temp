@@ -11,7 +11,7 @@
     <div>
       <header>
         <p class="Login_Total_Info">
-         <a href="Login_Page.html"><img src="img/outline_done_outline_black_24dp.png"  title="Logo" height="50" width="55"></a>
+         <a href="Login_Page.jsp"><img src="img/outline_done_outline_black_24dp.png"  title="Logo" height="50" width="55"></a>
           <strong><a href="Login_Page.jsp">Every Score</a></strong>
         </p>
       </header>
@@ -21,7 +21,7 @@
             <input type="password" name="pw" maxlength="20" placeholder="Password" required>
          </div>
          <p><input type="submit" id="Loginbox" value="로그인" length="20"></p>
-         <p class="Join_box">Every Score는 처음이야? <a href="Join_Page.html">회원가입</a></p>
+         <p class="Join_box">Every Score는 처음이야? <a href="Join_Page.jsp">회원가입</a></p>
        </form>
     </div>
   </body>
