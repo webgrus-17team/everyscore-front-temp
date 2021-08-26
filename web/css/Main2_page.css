@@ -41,6 +41,9 @@
         display: grid;
         grid-template-columns: 1fr 720px 1fr;
       }
+      .main2_id {
+        width: 100px;
+      }
       .left_td {
         width: 100px;
       }
