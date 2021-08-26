@@ -6,29 +6,29 @@ xhttp.onreadystatechange = function(){
 
         //내 등수
         let my_rank;
-        let my_score = jsonData[0].score;
-        jsonData.sort(function(a,b){
+        let my_score = jsonData.result[0].score;
+        jsonData.result.sort(function(a,b){
           return parseFloat(a.score) - parseFloat(b.score);
         });
-        for(let i=0; i<jsonData.length; i++){
-          if(my_score <= jsonData[i].score){
+        for(let i=0; i<jsonData.result.length; i++){
+          if(my_score <= jsonData.result[i].score){
             my_rank = i;
             break;
           }
         }
         let txt3 = '';
-        txt3 = '내 등수 : ' + my_rank + '/' + jsonData.length;
+        txt3 = '내 등수 : ' + my_rank + '/' + jsonData.result.length;
         document.getElementsByClassName('myrank').innerHTML = txt3;
 
         //평균
         let sc_total = 0;
         let sc0, sc1, sc2, sc3, sc4, sc5, sc6, sc7, sc8, sc9;
         sc0 = sc1 = sc2 = sc3 = sc4 = sc5 = sc6 = sc7 = sc8 = sc9 = 0;
-        for(let i=0; i<jsonData.length; i++){
-          sc_total += jsonData[i].score;
+        for(let i=0; i<jsonData.result.length; i++){
+          sc_total += jsonData.result[i].score;
         }
         let sc_average;
-        sc_average = sc_total/jsonData.length;
+        sc_average = sc_total/jsonData.result.length;
         let txt1 = '';
         txt1 += '<span style="width:47.2%;">' + '평균: ' + sc_average + '</span>';
         document.getElementsByClassName('average_stack1').innerHTML = txt1;
@@ -36,42 +36,42 @@ xhttp.onreadystatechange = function(){
 
         //중앙값
         let sc_midvalue;
-        jsonData.sort(function(a,b){
+        jsonData.result.sort(function(a,b){
           return parseFloat(a.score) - parseFloat(b.score);
         });
-        sc_midvalue = jsonData[jsonData.length/2];
+        sc_midvalue = jsonData.result[jsonData.result.length/2].score;
         let txt2 = '';
         txt2 += '<span style="width:47.2%;">' + '중간값: ' + sc_midvalue + '</span>';
         document.getElementsByClassName('midvalue_stack2').innerHTML = txt2;
 
 
         //좌측 bar그래프
-        for(let i=0; i<jsonData.length; i++){
-          if(jsonData[i].score >=0 && jsonData[i].score <= 10){
+        for(let i=0; i<jsonData.result.length; i++){
+          if(jsonData.result[i].score >=0 && jsonData.result[i].score <= 10){
             sc0++;
           }
-          else if(jsonData[i].score >=11 && jsonData[i].score <= 20){
+          else if(jsonData.result[i].score >=11 && jsonData.result[i].score <= 20){
             sc1++;
           }
-          else if(jsonData[i].score >=21 && jsonData[i].score <= 30){
+          else if(jsonData.result[i].score >=21 && jsonData.result[i].score <= 30){
             sc2++;
           }
-          else if(jsonData[i].score >=31 && jsonData[i].score <= 40){
+          else if(jsonData.result[i].score >=31 && jsonData.result[i].score <= 40){
             sc3++;
           }
-          else if(jsonData[i].score >=41 && jsonData[i].score <= 50){
+          else if(jsonData.result[i].score >=41 && jsonData.result[i].score <= 50){
             sc4++;
           }
-          else if(jsonData[i].score >=51 && jsonData[i].score <= 60){
+          else if(jsonData.result[i].score >=51 && jsonData.result[i].score <= 60){
             sc5++;
           }
-          else if(jsonData[i].score >=61 && jsonData[i].score <= 70){
+          else if(jsonData.result[i].score >=61 && jsonData.result[i].score <= 70){
             sc6++;
           }
-          else if(jsonData[i].score >=71 && jsonData[i].score <= 80){
+          else if(jsonData.result[i].score >=71 && jsonData.result[i].score <= 80){
             sc7++;
           }
-          else if(jsonData[i].score >=81 && jsonData[i].score <= 90){
+          else if(jsonData.result[i].score >=81 && jsonData.result[i].score <= 90){
             sc8++;
           }
           else{
@@ -108,17 +108,17 @@ xhttp.onreadystatechange = function(){
         let LV1, LV2, LV3, LV4, LV5;
         LV1 = LV2 = LV3 = LV4 = LV5 = 0;
 
-        for(let i=0; i<jsonData.length; i++){
-          if(jsonData[i].level == 1){
+        for(let i=0; i<jsonData.result.length; i++){
+          if(jsonData.result[i].level == 1){
             LV1++;
           }
-          else if(jsonData[i].level == 2){
+          else if(jsonData.result[i].level == 2){
             LV2++;
           }
-          else if(jsonData[i].level == 3){
+          else if(jsonData.result[i].level == 3){
             LV3++;
           }
-          else if(jsonData[i].level == 4){
+          else if(jsonData.result[i].level == 4){
             LV4++;
           }
           else{
@@ -147,5 +147,5 @@ xhttp.onreadystatechange = function(){
 
   }
 }
-xhttp.open("GET", "/api/v1/result/{Subject_name}/{Professor_name}", true);
+xhttp.open("GET", "/api/v1/result/{subjectName}/{professorName}/{testType}", true);
 xhttp.send();
